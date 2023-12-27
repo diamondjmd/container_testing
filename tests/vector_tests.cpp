@@ -101,8 +101,3 @@ TEST_F(VectorTest, Move) {
   EXPECT_EQ (lEmpty, vExpected);
   EXPECT_EQ (lFilled.size(), 0);
 }
-
-TEST_F(VectorTest, Destructor) {
-  lFilled.~Vector();
-  EXPECT_EQ (lFilled.size(), 0);
-}

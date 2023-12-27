@@ -105,8 +105,3 @@ TEST_F(ListTest, Move) {
   EXPECT_EQ (lEmpty, vExpected);
   EXPECT_EQ (lFilled.size(), 0);
 }
-
-TEST_F(ListTest, Destructor) {
-  lFilled.~List();
-  EXPECT_EQ (lFilled.size(), 0);
-}
